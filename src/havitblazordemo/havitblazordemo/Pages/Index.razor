@@ -1,0 +1,97 @@
+﻿@page "/"
+@using EndpointDesignWeb.WebUI.Models;
+
+<PageTitle>Index</PageTitle>
+
+<HxGrid TItem="TenantViewModel" Responsive="true" DataProvider="GetGridData" PageSize="5" @ref="@hxGrid">
+    <Columns>
+        <HxGridColumn HeaderText="Display Name" ItemTextSelector="@(item => item.DisplayName)" />
+        <HxGridColumn HeaderText="Description" ItemTextSelector="@(item => item.Description)" />
+        <HxContextMenuGridColumn Context="item">
+            <HxContextMenu>
+                <HxContextMenuItem Text="Edit" Icon="BootstrapIcon.Trash" OnClick="() => EditTenant(item)" />
+            </HxContextMenu>
+        </HxContextMenuGridColumn>
+    </Columns>
+</HxGrid>
+<HxButton Text="New Tenant HxModal" Color="ThemeColor.Primary" OnClick="NewTenantHxModal" />
+
+<HxModal @ref="newTenantModal" Title="New Tenant">
+    <BodyTemplate>
+        <EditForm Model="@_tenantViewModel" OnValidSubmit="HandleOkClick" id="newTenant">
+			<DataAnnotationsValidator />
+			<HxInputText Label="Display Name" @bind-Value="@_tenantViewModel.DisplayName" />
+            <HxInputText Label="Description" @bind-Value="@_tenantViewModel.Description"/>
+
+		</EditForm>
+        <HxSubmit FormId="newTenant" Color="ThemeColor.Primary">Ok</HxSubmit>
+        <HxButton Text="Close" OnClick="HandleCancelClick" Color="ThemeColor.Secondary" />
+    </BodyTemplate>
+    <FooterTemplate>
+       
+    </FooterTemplate>
+</HxModal>
+
+
+@code{
+    private HxGrid<TenantViewModel> hxGrid;
+    private List<TenantViewModel> tenants = new();
+
+
+
+    protected override void OnInitialized()
+    {
+        tenants.Add(new TenantViewModel()
+            {
+                DisplayName = "Tenant 1",
+                Description = "Description for tenant 1"
+            });
+        tenants.Add(new TenantViewModel()
+            {
+                DisplayName = "Tenant 2",
+                Description = "Description for tenant 2"
+            });
+    }
+
+
+
+
+    private HxModal newTenantModal;
+    private TenantViewModel _tenantViewModel;
+
+    private async Task HandleCancelClick()
+    {
+        await newTenantModal.HideAsync();
+    }
+    private async Task HandleOkClick()
+    {
+
+        await newTenantModal.HideAsync();
+        tenants.Add(_tenantViewModel);
+        await hxGrid.RefreshDataAsync();
+
+    }
+    private async Task NewTenantHxModal()
+    {
+        _tenantViewModel = new();
+        await newTenantModal.ShowAsync();
+
+    }
+
+    private async Task EditTenant(TenantViewModel tenant)
+    {
+        _tenantViewModel = tenant;
+        await newTenantModal.ShowAsync();
+    }
+
+
+    private Task<GridDataProviderResult<TenantViewModel>> GetGridData(GridDataProviderRequest<TenantViewModel> request)
+    {
+
+        return Task.FromResult(new GridDataProviderResult<TenantViewModel>
+            {
+                Data = tenants.Skip(request.StartIndex).Take(request.Count.Value).ToList(),
+                TotalCount = tenants.Count()
+            });
+    }
+}

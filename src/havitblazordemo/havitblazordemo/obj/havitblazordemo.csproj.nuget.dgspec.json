@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\havitblazordemo.csproj": {}
+  },
+  "projects": {
+    "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\havitblazordemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\havitblazordemo.csproj",
+        "projectName": "havitblazordemo",
+        "projectPath": "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\havitblazordemo.csproj",
+        "packagesPath": "C:\\Users\\dean\\.nuget\\packages\\",
+        "outputPath": "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\dean\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Havit.Blazor.Components.Web.Bootstrap": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

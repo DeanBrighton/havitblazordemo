@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "dgSpecHash": "I4Z9J9eS7vqi6gPYw+z8HSiOQuGrvIAxu9m3rTZWfv7AnLl8dP6j4dKZPEGaSje9vwUsw4i/4WrFs6+LZT7WHQ==",
+  "success": true,
+  "projectFilePath": "C:\\_DevWorking\\github\\havitblazordemo\\src\\havitblazordemo\\havitblazordemo\\havitblazordemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dean\\.nuget\\packages\\havit.blazor.components.web\\4.0.4\\havit.blazor.components.web.4.0.4.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\havit.blazor.components.web.bootstrap\\4.0.4\\havit.blazor.components.web.bootstrap.4.0.4.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\havit.core\\2.0.27\\havit.core.2.0.27.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.9\\microsoft.aspnetcore.authorization.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.9\\microsoft.aspnetcore.components.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.9\\microsoft.aspnetcore.components.analyzers.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.9\\microsoft.aspnetcore.components.forms.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.9\\microsoft.aspnetcore.components.web.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.9\\microsoft.aspnetcore.metadata.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.localization\\7.0.9\\microsoft.extensions.localization.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\7.0.9\\microsoft.extensions.localization.abstractions.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\microsoft.extensions.logging.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\microsoft.jsinterop\\7.0.9\\microsoft.jsinterop.7.0.9.nupkg.sha512",
+    "C:\\Users\\dean\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
